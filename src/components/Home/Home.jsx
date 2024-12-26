@@ -10,7 +10,7 @@ const Home = () => {
         style={{ backgroundImage: `url(${banner})` }}
       >
         <div className="absolute inset-20 flex flex-col justify-center items-start">
-          <h1 className="text-white text-[37px] leading-[44.78px] md:text-6xl font-bold mb-4">
+          <h1 className="text-white text-[37px] leading-[44.78px] font-bold mb-2">
             ZELIE TECH
           </h1>
           <p className="text-white text-lg md:text-[22px] leading-[26.63px] mb-8 max-w-[483px]">

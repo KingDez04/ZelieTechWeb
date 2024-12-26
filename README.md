@@ -36,7 +36,7 @@ Our team leverages the latest technologies to ensure top-notch service delivery.
 
 Stay updated and connect with us through:
 
-- [Website](#) 🌐
+- [Website](https://zelie-tech.vercel.app/) 🌐
 - [LinkedIn](#) 💼
 - [Twitter](#) 🐦
 

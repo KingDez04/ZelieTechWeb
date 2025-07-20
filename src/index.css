@@ -1,3 +1,15 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@layer utilities {
+  .retro-outline {
+    color: #FBECD4;
+    -webkit-text-stroke: 3px #1a0033;
+    text-stroke: 3px #1a0033;
+    text-shadow: 5px 5px 0 #FBECD4, 5px 3px 0 #FBECD4, 2px -3px 0 #FBECD4,
+      -2px -2px 0 #1a0033;
+    font-family: "Orbitron", "Arial Black", Arial, sans-serif;
+    letter-spacing: 0.05em;
+  }
+}

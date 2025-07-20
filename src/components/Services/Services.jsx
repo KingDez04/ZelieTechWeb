@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <div>
       <div
-        className="relative text-center md:text-left h-screen bg-cover bg-right md:bg-center"
+        className="relative text-center md:text-left h-screen bg-cover bg-[75%] md:bg-center"
         style={{ backgroundImage: `url(${banner})` }}
       >
         <div className="absolute inset-4 md:inset-20 flex flex-col justify-end md:justify-center items-start">

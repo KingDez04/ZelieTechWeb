@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import banner from "../../assets/images/JoinDesign.png";
+import banner from "../../assets/images/joinDesign.png";
 
 const Join = () => {
   return (

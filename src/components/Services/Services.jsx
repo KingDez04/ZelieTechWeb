@@ -1,9 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import banner from "../../assets/images/servicesImage.png";
 import web from "../../assets/images/wDesign.svg";
 import database from "../../assets/images/dbDesign.svg";
 import software from "../../assets/images/sDesign.svg";
 
 const Services = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div
@@ -61,7 +63,7 @@ const Services = () => {
         </div>
         <div>
           <button
-            onClick={() => {}}
+            onClick={() => navigate("/contact")}
             className="text-black rounded-[24.04px] md:rounded-[30px] text-[19.23px] md:text-[24px] leading-[23.28px] md:leading-[29.05px] h-[48.89px] md:h-[61px] w-[222px] md:w-[277px] bg-white hover:bg-black hover:text-white hover:border-white hover:border-2 font-bold mb-28 md:mb-0"
           >
             Wish

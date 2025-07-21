@@ -40,7 +40,10 @@ const Insights = () => {
               of the most exciting tech launches of 2025.
             </p>
             <p className="text-[10px] md:text-[14px]">Posted July 2025</p>
-            <Link className="flex items-center gap-1 font-bold text-[14px] hover:text-[#9c7a7a] text-[#686868]">
+            <Link
+              to="/insights/firstArticle"
+              className="flex items-center gap-1 font-bold text-[14px] hover:text-[#9c7a7a] text-[#686868]"
+            >
               Read More <img src={vector} alt="vector" />
             </Link>
           </div>
@@ -72,7 +75,10 @@ const Insights = () => {
               here's how.
             </p>
             <p className="text-[8px] md:text-[15px]">Posted June 2025</p>
-            <Link className="flex items-center gap-1 font-bold text-[8px] md:text-[14px] hover:text-[#9c7a7a] text-[#686868]">
+            <Link
+              to="/insights/secondArticle"
+              className="flex items-center gap-1 font-bold text-[8px] md:text-[14px] hover:text-[#9c7a7a] text-[#686868]"
+            >
               Read More <img src={vector} alt="vector" />
             </Link>
           </div>
@@ -94,7 +100,10 @@ const Insights = () => {
               creativity.
             </p>
             <p className="text-[8px] md:text-[15px]">Posted May 2025</p>
-            <Link className="flex items-center gap-1 font-bold text-[8px] md:text-[14px] hover:text-[#9c7a7a] text-[#686868]">
+            <Link
+              to="/insights/thirdArticle"
+              className="flex items-center gap-1 font-bold text-[8px] md:text-[14px] hover:text-[#9c7a7a] text-[#686868]"
+            >
               Read More <img src={vector} alt="vector" />
             </Link>
           </div>
@@ -115,7 +124,10 @@ const Insights = () => {
               Creating a serene, functional platform for a spiritual community.
             </p>
             <p className="text-[8px] md:text-[15px]">Posted June 2025</p>
-            <Link className="flex items-center gap-1 font-bold text-[8px] md:text-[14px] hover:text-[#9c7a7a] text-[#686868]">
+            <Link
+              to="/insights/fourthArticle"
+              className="flex items-center gap-1 font-bold text-[8px] md:text-[14px] hover:text-[#9c7a7a] text-[#686868]"
+            >
               Read More <img src={vector} alt="vector" />
             </Link>
           </div>
@@ -137,7 +149,10 @@ const Insights = () => {
               on your goals.
             </p>
             <p className="text-[8px] md:text-[15px]">Posted April 2025</p>
-            <Link className="flex items-center gap-1 font-bold text-[8px] md:text-[14px] hover:text-[#9c7a7a] text-[#686868]">
+            <Link
+              to="/insights/fifthArticle"
+              className="flex items-center gap-1 font-bold text-[8px] md:text-[14px] hover:text-[#9c7a7a] text-[#686868]"
+            >
               Read More <img src={vector} alt="vector" />
             </Link>
           </div>
@@ -149,7 +164,10 @@ const Insights = () => {
           <p className="text-[12px] md:text-[20px] leading-[100%]">
             Want to get fresh insights straight to your inbox?
           </p>
-          <button className="w-[246px] md:w-[393px] h-[51px] md:h-[72px] bg-[#470258] hover:bg-[#4702587d] rounded-[15px] text-white text-center text-[14px] md:text-[24px] cursor-pointer">
+          <button
+            onClick={() => {}}
+            className="w-[246px] md:w-[393px] h-[51px] md:h-[72px] bg-[#470258] hover:bg-[#4702587d] rounded-[15px] text-white text-center text-[14px] md:text-[24px] cursor-pointer"
+          >
             {`Subscribe to Our Newsletter ${">"}`}
           </button>
         </div>

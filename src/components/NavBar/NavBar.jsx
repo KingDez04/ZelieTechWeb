@@ -50,41 +50,41 @@ const MobileNavBar = () => {
           </span>
         </div>
         <ul className="px-2 pt-[2rem] text-center text-white text-[20px]">
-          <li className="py-5 px-4 hover:bg-[#909090] hover:text-black rounded-sm">
-            <Link to="/" onClick={handleCloseNav}>
+          <Link to="/" onClick={handleCloseNav}>
+            <li className="py-5 px-4 hover:bg-[#909090] hover:text-black rounded-sm">
               Home
-            </Link>
-          </li>
-          <li className="py-5 px-4 hover:bg-[#909090] hover:text-black rounded-sm">
-            <Link to="/services" onClick={handleCloseNav}>
+            </li>
+          </Link>
+          <Link to="/services" onClick={handleCloseNav}>
+            <li className="py-5 px-4 hover:bg-[#909090] hover:text-black rounded-sm">
               Services
-            </Link>
-          </li>
-          <li className="py-5 px-4 hover:bg-[#909090] hover:text-black rounded-sm">
-            <Link to="/projects" onClick={handleCloseNav}>
+            </li>
+          </Link>
+          <Link to="/projects" onClick={handleCloseNav}>
+            <li className="py-5 px-4 hover:bg-[#909090] hover:text-black rounded-sm">
               Projects
-            </Link>
-          </li>
-          <li className="py-5 px-4 hover:bg-[#909090] hover:text-black rounded-sm">
-            <Link to="/insights" onClick={handleCloseNav}>
+            </li>
+          </Link>
+          <Link to="/insights" onClick={handleCloseNav}>
+            <li className="py-5 px-4 hover:bg-[#909090] hover:text-black rounded-sm">
               Blog/Insights
-            </Link>
-          </li>
-          <li className="py-5 px-4 hover:bg-[#909090] hover:text-black rounded-sm">
-            <Link to="/launch" onClick={handleCloseNav}>
+            </li>
+          </Link>
+          <Link to="/launch" onClick={handleCloseNav}>
+            <li className="py-5 px-4 hover:bg-[#909090] hover:text-black rounded-sm">
               Launch 2025
-            </Link>
-          </li>
-          <li className="py-5 px-4 hover:bg-[#909090] hover:text-black rounded-sm">
-            <Link to="/join-us" onClick={handleCloseNav}>
+            </li>
+          </Link>
+          <Link to="/join-us" onClick={handleCloseNav}>
+            <li className="py-5 px-4 hover:bg-[#909090] hover:text-black rounded-sm">
               Join Us
-            </Link>
-          </li>
-          <li className="py-5 px-4 hover:bg-[#909090] hover:text-black rounded-sm">
-            <Link to="/contact" onClick={handleCloseNav}>
+            </li>
+          </Link>
+          <Link to="/contact" onClick={handleCloseNav}>
+            <li className="py-5 px-4 hover:bg-[#909090] hover:text-black rounded-sm">
               Contact Us
-            </Link>
-          </li>
+            </li>
+          </Link>
         </ul>
       </div>
     </nav>

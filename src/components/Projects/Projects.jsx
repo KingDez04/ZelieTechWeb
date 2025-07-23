@@ -131,8 +131,8 @@ const Projects = () => {
             </p>
             <p className="font-light text-[20px] md:text-[25px">
               From bold startups to passionate communities, we help brands come
-              alive online. Need something custom?{" "}
-              <Link to="" className="text-blue-500 hover:text-blue-400">
+              alive online. Need something custom?
+              <Link to="/contact" className="text-blue-500 hover:text-blue-400">
                 Let's talk
               </Link>
               .

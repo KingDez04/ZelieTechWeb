@@ -4,7 +4,7 @@ import article12 from "../../../assets/images/article12.png";
 
 const FirstArticle = () => {
   return (
-    <article className="bg-[#F4F1EC] pb-10">
+    <article className="bg-[#F4F1EC] pb-10 min-h-screen">
       <div
         className="h-[100px] md:h-[305px] bg-black bg-contain bg-no-repeat bg-center"
         style={{ backgroundImage: `url(${mainArticle})` }}

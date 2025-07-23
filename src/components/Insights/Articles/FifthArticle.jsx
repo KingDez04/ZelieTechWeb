@@ -3,7 +3,7 @@ import article52 from "../../../assets/images/article52.png";
 
 const FifthArticle = () => {
   return (
-    <article className="bg-[#F4F1EC] py-10">
+    <article className="bg-[#F4F1EC] py-10 px-5 md:px-0 min-h-screen">
       <div className="max-w-[1155px] mx-auto">
         <div className="my-5">
           <h1 className="font-bold text-[15px] md:text-[36px] text-center leading-[100%]">

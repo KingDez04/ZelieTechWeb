@@ -2,7 +2,7 @@ import article4 from "../../../assets/images/article4.png";
 
 const FourthArticle = () => {
   return (
-    <article className="bg-[#F4F1EC] py-10">
+    <article className="bg-[#F4F1EC] py-10 px-5 md:px-0 min-h-screen">
       <div className="max-w-[1155px] mx-auto">
         <div className="my-5">
           <h1 className="font-bold text-[15px] md:text-[36px] text-center leading-[100%]">
@@ -19,7 +19,7 @@ const FourthArticle = () => {
           how we approached building a platform that speaks to the soul as much
           as it serves the user.
         </p>
-        <div className="grid grid-cols-2 gap-10 my-5 text-[22px]">
+        <div className="grid grid-cols-2 gap-10 my-5 text-[12px] md:text-[22px]">
           <div>
             <p>
               Building with Reverence and Intention Designing for a faith-based

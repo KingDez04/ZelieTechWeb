@@ -1,11 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { CgClose } from "react-icons/cg";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/Logo.svg";
 
-const MobileNavBar = () => {
+const NavBar = () => {
   const [nav, setNav] = useState(false);
+  const dropdownRef = useRef(null);
 
   const handleNav = () => {
     setNav((prevNav) => !prevNav);
@@ -15,6 +16,22 @@ const MobileNavBar = () => {
     setNav(false);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target) &&
+        event.target.closest(".dropdown-toggle") === null
+      ) {
+        setNav(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <nav className="relative z-50 block bg-black px-5">
       <div className="flex items-center justify-between w-full">
@@ -22,7 +39,10 @@ const MobileNavBar = () => {
           <img src={Logo} alt="Zelie Logo" className="w-[40%] p-2" /> ZELIE
         </span>
         {!nav && (
-          <div onClick={handleNav} className="cursor-pointer z-50 text-white">
+          <div
+            onClick={handleNav}
+            className="cursor-pointer z-50 text-white dropdown-toggle"
+          >
             <AiOutlineMenu size={35} />
           </div>
         )}
@@ -49,7 +69,10 @@ const MobileNavBar = () => {
             ZELIE
           </span>
         </div>
-        <ul className="px-2 pt-[2rem] text-center text-white text-[20px]">
+        <ul
+          ref={dropdownRef}
+          className="px-2 pt-[2rem] text-center text-white text-[20px]"
+        >
           <Link to="/" onClick={handleCloseNav}>
             <li className="py-5 px-4 hover:bg-[#909090] hover:text-black rounded-sm">
               Home
@@ -91,4 +114,4 @@ const MobileNavBar = () => {
   );
 };
 
-export default MobileNavBar;
+export default NavBar;

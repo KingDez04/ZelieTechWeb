@@ -16,10 +16,16 @@ const Insights = () => {
         style={{ backgroundImage: `url(${banner})` }}
       >
         <div className="absolute inset-4 md:inset-20 flex flex-col justify-end md:justify-center items-start">
-          <h1 className="self-center md:self-auto text-[32px] md:text-[48px] leading-[41.15px] md:leading-[44.78px] font-extrabold mb-2">
+          <h1
+            style={{ textShadow: "5px 5px 10px #16B4F4" }}
+            className="text-white self-center md:self-auto text-[32px] md:text-[48px] leading-[41.15px] md:leading-[44.78px] font-extrabold mb-2"
+          >
             Insights That Drive Innovation
           </h1>
-          <p className="font-extrabold self-center md:self-auto text-[13px] md:text-[14px] leading-[20.57px] md:leading-[26.63px] mb-8 max-w-[483px]">
+          <p
+            style={{ textShadow: "5px 5px 10px #16B4F4" }}
+            className="text-white font-extrabold self-center md:self-auto text-[13px] md:text-[14px] leading-[20.57px] md:leading-[26.63px] mb-8 max-w-[483px]"
+          >
             Explore stories, strategies, and lessons from inside Zelie Tech.
             From design breakthroughs to startup tips, we share what we’re
             learning, building, and imagining — so you can grow with us.

@@ -11,7 +11,10 @@ const Contact = () => {
         style={{ backgroundImage: `url(${banner})` }}
       >
         <div className="absolute inset-20 text-white flex flex-col justify-center items-start">
-          <h1 className="self-center md:self-auto text-[26.44px] md:text-[37px] leading-[32px] md:leading-[44.78px] font-bold mb-3">
+          <h1
+            style={{ textShadow: "5px 5px 10px #16B4F4" }}
+            className="text-white self-center md:self-auto text-[26.44px] md:text-[37px] leading-[32px] md:leading-[44.78px] font-bold mb-3"
+          >
             CONTACT US
           </h1>
           <p className="self-center md:self-auto text-[17px] md:text-[22px] leading-[20.57px] md:leading-[26.63px] mb-3 max-w-[326px] md:max-w-[483px]">

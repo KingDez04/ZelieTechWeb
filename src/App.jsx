@@ -1,6 +1,12 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import NotFound from "./components/NotFound/NotFound";
 import NavBar from "./components/NavBar/NavBar";
+import ArticleNav from "./components/ArticleNav/ArticleNav";
 import Home from "./components/Home/Home";
 // import Footer from "./components/Footer/Footer";
 import Services from "./components/Services/Services";
@@ -14,10 +20,20 @@ import FifthArticle from "./components/Insights/Articles/FifthArticle";
 import Launch from "./components/Launch/Launch";
 import Join from "./components/Join/Join";
 import Contact from "./components/Contact/Contact";
+
 const App = () => {
+  const location = useLocation();
+
+  const renderNavBar = () => {
+    if (location.pathname.includes("/insights/")) {
+      return <ArticleNav />;
+    }
+    return <NavBar />;
+  };
+
   return (
-    <Router>
-      <NavBar />
+    <>
+      {renderNavBar()}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
@@ -34,8 +50,16 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
       </Routes>
       {/* <Footer /> */}
+    </>
+  );
+};
+
+const AppWrapper = () => {
+  return (
+    <Router>
+      <App />
     </Router>
   );
 };
 
-export default App;
+export default AppWrapper;

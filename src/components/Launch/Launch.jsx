@@ -1,5 +1,5 @@
 import banner from "../../assets/images/launchDesign.png";
-import launch1 from "../../assets/images/launch1.png";
+import launch6 from "../../assets/images/launch6.jpeg";
 import launch2 from "../../assets/images/launch2.png";
 import launch3 from "../../assets/images/launch3.png";
 import launch4 from "../../assets/images/launch4.png";
@@ -39,7 +39,7 @@ const Launch = () => {
           <div className="flex flex-col gap-5">
             <div className="grid grid-cols-2 gap-5">
               <img
-                src={launch1}
+                src={launch6}
                 alt="first image in grid"
                 className="w-full object-cover h-[208px] md:h-[430px]"
               />
